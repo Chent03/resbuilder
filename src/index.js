@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/index.scss';
 import { rootReducer } from './reducers';
 import Home from './components/Home';
+import Navigation from './components/Navigvation';
 
 const store = createStore(rootReducer, applyMiddleware(promise))
 
@@ -19,6 +20,7 @@ ReactDOM.render(
     <Provider store={store}>
         <BrowserRouter>
             <div>
+                <Navigation />
                 <Switch>
                     <Route path="/" component={Home}/>
                 </Switch>

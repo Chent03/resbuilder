@@ -5,7 +5,6 @@ import Navigation from './Navigvation';
 const Home = (props) => {
   return (
     <div>
-      <Navigation />
       <Jumbotron fluid className="jumboHome">
         <Container fluid>
           <h1 className="display-3">Fluid jumbotron</h1>
